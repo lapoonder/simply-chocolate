@@ -322,6 +322,7 @@ main {
     padding: 60px 0;
     margin: 0 32px;
     background-color: #fafafa;
+    text-align: center;
 }
 
 .how-its-made-content {
@@ -450,7 +451,7 @@ main {
 
 .review-list {
     display: flex;
-    margin: 50px auto 0;
+    margin: 92px auto 50px;
     gap: 28px;
 }
 
@@ -481,4 +482,118 @@ main {
 
 .review-text p {
     margin: 24px;
+}
+
+.reviews button {
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+    background-color: #fafafa;
+    margin-bottom: 60px;
+}
+
+.reviews button:hover,
+.reviews button:focus {
+    background-color: #fd9222;
+    color: #fff;
+}
+
+footer {
+    background: #1e1823;
+    color: #fff;
+}
+
+footer span {
+    color: #fd9222;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 32px;
+}
+
+.footer-info h2 {
+    width: 300px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.02em;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.social-info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.information h5 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    font-style: normal;
+}
+
+.social-links {
+    display: flex;
+    gap: 14px;
+}
+
+.social-links img {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+address a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+}
+
+footer hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 32px;
+    transform: rotate(-180deg);
+}
+
+.footer-navigation {
+    padding: 42px 32px 68px;
+}
+
+.footer-navigation a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14286;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.footer-navigation .menu {
+    justify-content: flex-start;
 }
