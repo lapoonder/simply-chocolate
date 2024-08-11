@@ -72,7 +72,8 @@ footer {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.03em;
-  width: 50%;
+  min-width: 215px;
+  margin-right: 25px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -97,7 +98,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  gap: 90px;
 }
 
 .menu {
@@ -153,13 +154,15 @@ footer {
 }
 
 .start-page {
-  height: 600px;
-  padding: 40px;
+  padding: 381px 40px 40px;
   background: rgba(17, 17, 17, 0.4);
   background-image: url('../images/hero-bg_desk.jpg');
   background-size: cover;
   border-radius: 30px;
   justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (min-resolution: 192dpi) {
@@ -301,6 +304,7 @@ footer {
 }
 
 .benefits {
+  /*  width: 100%;*/
   padding: 80px 0 0;
 }
 
