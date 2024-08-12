@@ -115,6 +115,11 @@ footer {
   letter-spacing: -0.02em;
 }
 
+.big-first-letter a:hover,
+.big-first-letter a:focus {
+  color: #fd9222;
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -131,16 +136,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-social-network {
   fill: #111;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-href:hover,
@@ -263,6 +264,7 @@ footer {
   border: none;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -404,11 +406,9 @@ footer {
   position: relative;
   width: calc((100% - 96px) / 4);
   border-radius: 15px;
-}
-
-.ingridients-list li {
   background: #1e1823;
   color: #fff;
+  cursor: pointer;
 }
 
 .ingridients-list li:nth-child(4n + 1) {
@@ -457,6 +457,11 @@ footer {
 
 .svg-more {
   fill: #fafafa;
+}
+
+.ingridients-list li:hover .more-icons,
+.ingridients-list li:focus .more-icons {
+  transform: rotate(90deg);
 }
 
 .more-icons:hover,
@@ -608,12 +613,21 @@ footer {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
   padding: 8px 20px;
+  min-width: 94px;
+  height: 33px;
   background: #fafafa;
   margin-bottom: 32px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.product button:hover,
+.product button:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .top-sellers-list {
@@ -625,9 +639,57 @@ footer {
 .top-sell {
   border-radius: 15px 15px;
   overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-sell button {
+.top-sell:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.div-img-with-pop-up {
+  position: relative;
+  overflow: hidden;
+}
+
+.pop-up-div {
+  position: absolute;
+  border-radius: 15px 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0.1) 100%
+  );
+  transform: translateY(150%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-sell:hover .pop-up-div,
+.top-sell:focus .pop-up-div {
+  transform: translateY(0%);
+}
+
+.pop-up-text {
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  padding: 0 40px;
+}
+
+.top-seller-button {
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
   border-left: 1px solid rgba(17, 17, 17, 0.1);
   border-right: 1px solid rgba(17, 17, 17, 0.1);
@@ -636,14 +698,15 @@ footer {
   width: 100%;
   padding-top: 28px;
   padding-bottom: 28px;
-  font-family: 'Montserrat', sans-serif;
+}
+
+.top-seller-name {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33333;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
-  cursor: pointer;
 }
 
 .review-list {
@@ -741,14 +804,36 @@ footer span {
 
 .social-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 14px;
 }
 
-.social-links img {
+.social-href-footer {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 8px;
-  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-social-network-footer {
+  fill: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-href-footer:hover,
+.social-href-footer:focus {
+  border-color: rgba(253, 146, 34, 0.1);
+}
+
+.social-href-footer:hover .svg-social-network-footer,
+.social-href-footer:focus .svg-social-network-footer {
+  fill: #fd9222;
 }
 
 address {
