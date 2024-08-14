@@ -550,7 +550,7 @@ footer {
 .how-its-made-list {
   display: flex;
   flex-direction: column;
-  list-style: disc;
+  list-style: url('../images/marker_disk.svg');
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
