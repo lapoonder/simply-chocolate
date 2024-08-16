@@ -22,7 +22,7 @@
         <div class="logo">
           <a href="index.html"><span>simply</span> chocolate</a>
           <a href="index.html">
-            <svg width="24" height="24">
+            <svg>
               <use
                 class="svg-logo"
                 href="./images/sprite_new.svg#chocolate"
@@ -68,6 +68,11 @@
             </li>
           </ul>
         </div>
+        <button class="mobile-menu-btn">
+          <svg class="mobile-menu-svg-icon" width="32" height="32">
+            <use href="./images/sprite_new.svg#menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -157,8 +162,12 @@
             <span>taste</span> sensation
           </h2>
           <ul class="ingridients-list">
-            <li>
+            <li class="ingredient">
               <img
+                srcset="
+                  ./images/ingredients/milk-chocolate.png    1x,
+                  ./images/ingredients/milk-chocolate@2x.png 2x
+                "
                 src="./images/ingredients/milk-chocolate.png"
                 alt="milk chocolate"
               />
@@ -169,8 +178,15 @@
                 </svg>
               </div>
             </li>
-            <li>
-              <img src="./images/ingredients/milk.png" alt="milk" />
+            <li class="ingredient">
+              <img
+                srcset="
+                  ./images/ingredients/milk.png    1x,
+                  ./images/ingredients/milk@2x.png 2x
+                "
+                src="./images/ingredients/milk.png"
+                alt="milk"
+              />
               <h3>milk</h3>
               <div class="more-icons" href="#">
                 <svg class="svg-more" width="12" height="8">
@@ -178,8 +194,15 @@
                 </svg>
               </div>
             </li>
-            <li>
-              <img src="./images/ingredients/nuts.png" alt="nuts" />
+            <li class="ingredient">
+              <img
+                srcset="
+                  ./images/ingredients/nuts.png    1x,
+                  ./images/ingredients/nuts@2x.png 2x
+                "
+                src="./images/ingredients/nuts.png"
+                alt="nuts"
+              />
               <h3>nuts</h3>
               <div class="more-icons" href="#">
                 <svg class="svg-more" width="12" height="8">
@@ -187,8 +210,12 @@
                 </svg>
               </div>
             </li>
-            <li>
+            <li class="ingredient">
               <img
+                srcset="
+                  ./images/ingredients/semi-sweet-chocolate.png    1x,
+                  ./images/ingredients/semi-sweet-chocolate@2x.png 2x
+                "
                 src="./images/ingredients/semi-sweet-chocolate.png"
                 alt="semi-sweet chocolate"
               />
@@ -199,8 +226,15 @@
                 </svg>
               </div>
             </li>
-            <li>
-              <img src="./images/ingredients/cacao.png" alt="cacao" />
+            <li class="ingredient mobile-not-view">
+              <img
+                srcset="
+                  ./images/ingredients/cacao.png    1x,
+                  ./images/ingredients/cacao@2x.png 2x
+                "
+                src="./images/ingredients/cacao.png"
+                alt="cacao"
+              />
               <h3>cacao</h3>
               <div class="more-icons" href="#">
                 <svg class="svg-more" width="12" height="8">
@@ -208,8 +242,15 @@
                 </svg>
               </div>
             </li>
-            <li>
-              <img src="./images/ingredients/raspberry.png" alt="raspberry" />
+            <li class="ingredient mobile-not-view">
+              <img
+                srcset="
+                  ./images/ingredients/raspberry.png    1x,
+                  ./images/ingredients/raspberry@2x.png 2x
+                "
+                src="./images/ingredients/raspberry.png"
+                alt="raspberry"
+              />
               <h3>raspberry</h3>
               <div class="more-icons" href="#">
                 <svg class="svg-more" width="12" height="8">
@@ -217,8 +258,12 @@
                 </svg>
               </div>
             </li>
-            <li>
+            <li class="ingredient mobile-not-view">
               <img
+                srcset="
+                  ./images/ingredients/coconut-oil.png    1x,
+                  ./images/ingredients/coconut-oil@2x.png 2x
+                "
                 src="./images/ingredients/coconut-oil.png"
                 alt="coconut oil"
               />
@@ -229,8 +274,15 @@
                 </svg>
               </div>
             </li>
-            <li>
-              <img src="./images/ingredients/vanilla.png" alt="vanilla" />
+            <li class="ingredient mobile-not-view">
+              <img
+                srcset="
+                  ./images/ingredients/vanilla.png    1x,
+                  ./images/ingredients/vanilla@2x.png 2x
+                "
+                src="./images/ingredients/vanilla.png"
+                alt="vanilla"
+              />
               <h3>vanilla</h3>
               <div class="more-icons" href="#">
                 <svg class="svg-more" width="12" height="8">
@@ -246,7 +298,30 @@
           <h2 class="title-size-2">how it's <span>made</span>?</h2>
           <div class="how-its-made-content">
             <div class="how-its-made-video">
-              <img src="./images/how-its-made.jpg" alt="" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/how-its-made.jpg    1x,
+                    ./images/how-its-made@2x.jpg 2x
+                  "
+                  media="(min-width: 1158px)"
+                />
+                <source
+                  srcset="
+                    ./images/how-its-made_tab.jpg    1x,
+                    ./images/how-its-made_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/how-its-made_mob.jpg    1x,
+                    ./images/how-its-made_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/how-its-made.jpg" alt="How it's made" />
+              </picture>
               <div class="play-icon" href="#">
                 <svg class="svg-play" width="20" height="21">
                   <use href="./images/sprite_new.svg#play"></use>
@@ -286,7 +361,14 @@
           <h2 class="title-size-2">our <span>products</span></h2>
           <ul class="products-list">
             <li class="product">
-              <img src="./images/products/orange.jpg" alt="orange" />
+              <img
+                srcset="
+                  ./images/products/orange.jpg    1x,
+                  ./images/products/orange@2x.jpg 2x
+                "
+                src="./images/products/orange.jpg"
+                alt="orange"
+              />
               <div class="name-produtc">
                 <h3>orange</h3>
                 <p class="big-first-letter">dark chocolate</p>
@@ -295,6 +377,10 @@
             </li>
             <li class="product">
               <img
+                srcset="
+                  ./images/products/apple-cranberry.jpg    1x,
+                  ./images/products/apple-cranberry@2x.jpg 2x
+                "
                 src="./images/products/apple-cranberry.jpg"
                 alt="apple cranberry"
               />
@@ -306,6 +392,10 @@
             </li>
             <li class="product">
               <img
+                srcset="
+                  ./images/products/lime-sea_salt.jpg    1x,
+                  ./images/products/lime-sea_salt@2x.jpg 2x
+                "
                 src="./images/products/lime-sea_salt.jpg"
                 alt="lime&sea salt"
               />
@@ -316,7 +406,14 @@
               <button>66 uah</button>
             </li>
             <li class="product">
-              <img src="./images/products/pineapple.jpg" alt="pineapple" />
+              <img
+                srcset="
+                  ./images/products/pineapple.jpg    1x,
+                  ./images/products/pineapple@2x.jpg 2x
+                "
+                src="./images/products/pineapple.jpg"
+                alt="pineapple"
+              />
               <div class="name-produtc">
                 <h3>pineapple</h3>
                 <p class="big-first-letter">dark chocolate</p>
@@ -325,6 +422,10 @@
             </li>
             <li class="product">
               <img
+                srcset="
+                  ./images/products/classic.jpg    1x,
+                  ./images/products/classic@2x.jpg 2x
+                "
                 src="./images/products/classic.jpg"
                 alt="classic milk chocolate"
               />
@@ -335,7 +436,14 @@
               <button>45 uah</button>
             </li>
             <li class="product">
-              <img src="./images/products/honey.jpg" alt="honey" />
+              <img
+                srcset="
+                  ./images/products/honey.jpg    1x,
+                  ./images/products/honey@2x.jpg 2x
+                "
+                src="./images/products/honey.jpg"
+                alt="honey"
+              />
               <div class="name-produtc">
                 <h3>honey</h3>
                 <p class="big-first-letter">milk chocolate</p>
@@ -344,6 +452,10 @@
             </li>
             <li class="product">
               <img
+                srcset="
+                  ./images/products/roasted-fruits.jpg    1x,
+                  ./images/products/roasted-fruits@2x.jpg 2x
+                "
                 src="./images/products/roasted-fruits.jpg"
                 alt="roasted fruits"
               />
@@ -355,6 +467,10 @@
             </li>
             <li class="product">
               <img
+                srcset="
+                  ./images/products/classic-white.jpg    1x,
+                  ./images/products/classic-white@2x.jpg 2x
+                "
                 src="./images/products/classic-white.jpg"
                 alt="classic white chocolate"
               />
@@ -391,7 +507,7 @@
                 <h3 class="top-seller-name">chocolate with nuts</h3>
               </div>
             </li>
-            <li class="top-sell">
+            <li class="top-sell mobile-none-view">
               <div class="div-img-with-pop-up">
                 <img
                   class="img-top-sell"
@@ -411,7 +527,7 @@
                 <h3 class="top-seller-name">chocolate with nuts</h3>
               </div>
             </li>
-            <li class="top-sell">
+            <li class="top-sell tablet-none-view">
               <div class="div-img-with-pop-up">
                 <img
                   class="img-top-sell"
@@ -451,7 +567,7 @@
                 wafer, covered in a thin layer chocolate.
               </p>
             </li>
-            <li class="review-text">
+            <li class="review-text mobile-none-view">
               <div class="people">
                 <img
                   src="./images/people/Nazar-Babenko.png"
@@ -465,7 +581,7 @@
                 is good.
               </p>
             </li>
-            <li class="review-text">
+            <li class="review-text tablet-none-view">
               <div class="people">
                 <img
                   src="./images/people/Olena-Kampusch.png"
