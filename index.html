@@ -48,14 +48,14 @@
             <li>
               <a class="social-href" href="#">
                 <svg class="svg-social-network" width="24" height="24">
-                  <use href="./images/sprite_new.svg#instagram"></use>
+                  <use href="./images/sprite_new.svg#instagram_new"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social-href" href="#">
                 <svg class="svg-social-network" width="24" height="24">
-                  <use href="./images/sprite_new.svg#twitter"></use>
+                  <use href="./images/sprite_new.svg#twitter_new"></use>
                 </svg>
               </a>
             </li>
@@ -237,11 +237,6 @@
                 />
                 <img src="./images/how-its-made.jpg" alt="How it's made" />
               </picture>
-              <div class="play-icon" href="#">
-                <svg class="svg-play" width="20" height="21">
-                  <use href="./images/sprite_new.svg#play"></use>
-                </svg>
-              </div>
             </div>
             <div class="how-its-made-info">
               <h4>
@@ -317,6 +312,30 @@
               </p>
             </li>
           </ul>
+          <div class="section-scroll-dots">
+            <ul class="scroll-dots-list">
+              <li class="scroll-dott">
+                <svg class="svg-scroll-dott" width="13" height="13">
+                  <use href="./images/sprite_new.svg#scroll-dot"></use>
+                </svg>
+              </li>
+              <li class="scroll-dott">
+                <svg class="svg-scroll-dott" width="13" height="13">
+                  <use href="./images/sprite_new.svg#scroll-dot"></use>
+                </svg>
+              </li>
+              <li class="scroll-dott">
+                <svg class="svg-scroll-dott" width="13" height="13">
+                  <use href="./images/sprite_new.svg#scroll-dot"></use>
+                </svg>
+              </li>
+              <li class="scroll-dott-active">
+                <svg class="svg-scroll-rectangle" width="28" height="13">
+                  <use href="./images/sprite_new.svg#scroll-rectangle"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
           <button>leave a review</button>
         </div>
       </section>
@@ -363,10 +382,170 @@
                 placeholder="Enter your email"
               />
             </label>
-            <button class="subscribe-form-btn" type="submit">Subscribe</button>
+            <button class="subscribe-form-btn" type="submit" data-modal-open>
+              Subscribe
+            </button>
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- #region block_modal_overlay_menu -->
+    <div class="modal-mobile-menu visually-hidden">
+      <button type="button" class="href-close-modal">
+        <svg class="icon-close-modal" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-site-navigation">
+        <ul class="mobile-menu menu-site">
+          <li><a href="./index.html" class="nav-link current">Studio</a></li>
+          <li><a href="" class="nav-link">Portfolio</a></li>
+          <li><a href="" class="nav-link">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="modal-contacts-social-media">
+        <address class="company-contacts">
+          <ul class="company-email-phone">
+            <li>
+              <a href="tel:+110001111111" class="contact">
+                +11 (000) 111-11-11
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="contact">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+        <ul class="footer-social-network">
+          <li class="item-social-list">
+            <a href="#instagram" class="href-social-media">
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-social-list">
+            <a href="#twitter" class="href-social-media">
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-social-list">
+            <a href="#facebook" class="href-social-media">
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="item-social-list">
+            <a href="#linkedin" class="href-social-media">
+              <svg class="footer-social-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- #endregion block_modal_overlay_menu -->
+
+    <!-- #region block_modal_overlay_form -->
+
+    <div class="modal-overlay" data-modal>
+      <div class="modal">
+        <button type="button" class="href-close-modal" data-modal-close>
+          <svg class="icon-close-modal" width="12" height="12">
+            <use href="./images/sprite_new.svg#close"></use>
+          </svg>
+        </button>
+        <p class="title-modal">
+          leave a review about <span>our chocolate</span>
+        </p>
+        <form action="#" class="modal-form">
+          <div class="data-form">
+            <label class="label-modal-form" for="user-name">Name</label>
+            <div class="div-input">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="input-modal-form"
+                autofocus
+              />
+              <svg class="input-modal-user-svg" width="17" height="17">
+                <use href="./images/sprite_new.svg#user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-form">
+            <label class="label-modal-form" for="user-email">Email</label>
+            <div class="div-input">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="input-modal-form"
+              />
+              <svg class="input-modal-user-svg" width="17" height="17">
+                <use href="./images/sprite_new.svg#mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-form">
+            <label class="label-modal-form" for="user-phone"
+              >Phone number</label
+            >
+            <div class="div-input">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                class="input-modal-form"
+              />
+              <svg class="input-modal-user-svg" width="17" height="17">
+                <use href="./images/sprite_new.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="data-form data-form-textarea">
+            <label class="label-modal-form" for="user-comment">Comment</label>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              placeholder="Enter text"
+              class="textarea-modal-form"
+            ></textarea>
+          </div>
+          <div class="data-checkbox">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              class="checkbox-modal-form visually-hidden"
+            /><label class="label-modal-form label-checkbox" for="user-privacy"
+              ><span class="checkbox-modal-form-span">
+                <svg class="input-modal-click" width="10" height="8">
+                  <use href="./images/sprite_new.svg#click"></use>
+                </svg> </span
+              ><span class="label-text-checkbox-modal-form"
+                >I accept the terms and conditions of the
+                <a href="#" class="modal-form-href-policy"
+                  >Privacy Policy</a
+                ></span
+              >
+            </label>
+          </div>
+          <button type="button" class="modal-form-button">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion block_modal_overlay_form -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
