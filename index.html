@@ -61,7 +61,7 @@
             </li>
           </ul>
         </div>
-        <button class="mobile-menu-btn">
+        <button class="mobile-menu-btn" mobile-modal-open>
           <svg class="mobile-menu-svg-icon" width="32" height="32">
             <use href="./images/sprite_new.svg#menu"></use>
           </svg>
@@ -391,60 +391,38 @@
     </footer>
 
     <!-- #region block_modal_overlay_menu -->
-    <div class="modal-mobile-menu visually-hidden">
-      <button type="button" class="href-close-modal">
-        <svg class="icon-close-modal" width="8" height="8">
-          <use href="./images/icons.svg#close"></use>
+    <div class="modal-mobile-menu" mobile-menu-window>
+      <button type="button" class="href-close-modal2" mobile-modal-close>
+        <svg class="icon-close-modal-menu" width="12" height="12">
+          <use href="./images/sprite_new.svg#close"></use>
         </svg>
       </button>
       <nav class="mobile-site-navigation">
-        <ul class="mobile-menu menu-site">
-          <li><a href="./index.html" class="nav-link current">Studio</a></li>
-          <li><a href="" class="nav-link">Portfolio</a></li>
-          <li><a href="" class="nav-link">Contacts</a></li>
+        <ul class="mobile-menu menu">
+          <li>
+            <a href="./index.html" class="nav-link current">home</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">how it's made?</a>
+          </li>
+          <li>
+            <a href="" class="nav-link">chocolate is loved</a>
+          </li>
         </ul>
       </nav>
-      <div class="modal-contacts-social-media">
-        <address class="company-contacts">
-          <ul class="company-email-phone">
-            <li>
-              <a href="tel:+110001111111" class="contact">
-                +11 (000) 111-11-11
-              </a>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="contact">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-        </address>
-        <ul class="footer-social-network">
-          <li class="item-social-list">
-            <a href="#instagram" class="href-social-media">
-              <svg class="footer-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#instagram"></use>
+      <div class="modal-social-media">
+        <ul class="social-list">
+          <li>
+            <a class="social-href" href="#">
+              <svg class="svg-social-network" width="22" height="22">
+                <use href="./images/sprite_new.svg#instagram_new"></use>
               </svg>
             </a>
           </li>
-          <li class="item-social-list">
-            <a href="#twitter" class="href-social-media">
-              <svg class="footer-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item-social-list">
-            <a href="#facebook" class="href-social-media">
-              <svg class="footer-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="item-social-list">
-            <a href="#linkedin" class="href-social-media">
-              <svg class="footer-social-icon" width="24" height="24">
-                <use href="./images/icons.svg#linkedin"></use>
+          <li>
+            <a class="social-href" href="#">
+              <svg class="svg-social-network" width="22" height="22">
+                <use href="./images/sprite_new.svg#twitter_new"></use>
               </svg>
             </a>
           </li>
